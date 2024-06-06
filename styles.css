@@ -1,0 +1,206 @@
+:root {
+    --fade-time: 1.75s;
+    --slide-time: 2s; 
+    --slide-in-start: -100%;
+    --f: 'Arial', sans-serif;
+
+}
+
+body {
+    background-color: #141414;
+  }
+  .fade-in-text {
+  font-family:var(--f);
+  font-size: 48px;
+  animation: fadeIn var(--fade-time);
+  -webkit-animation: fadeIn var(--fade-time);
+  -moz-animation: fadeIn var(--fade-time);
+  -o-animation: fadeIn var(--fade-time);
+  -ms-animation: fadeIn var(--fade-time);
+  }
+
+  .slide-down-text {
+    font-family: var(--f);
+    animation: slideDown var(--slide-time);
+    -webkit-animation: slideDown var(--slide-time);
+    -moz-animation: slideDown var(--slide-time);
+    -o-animation: slideDown var(--slide-time);
+    -ms-animation: slideDown var(--slide-time);
+  }
+
+  .center {
+    margin: auto;
+    text-align: center;
+  }
+  .centersides {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+  }
+
+  .Header1 {
+    font-family: var(--f);
+    font-size: 32px;
+    padding: 4px;
+    color: whitesmoke;
+  }
+  
+  .h1 {
+    text-align: center;
+  }
+
+  #game-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .letter-box {
+    border: 2px solid black;
+    border-radius: 4px;
+    margin: 2px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: black;
+    background-color: whitesmoke;
+    font-family: var(--f);
+    /*transform text down 4 pixels*/
+    transform: translateY(4px);
+  }
+
+  .toast-error { 
+    background-color: rgb(246, 44, 37) !important;
+    color: white !important;
+    align-items: center !important;
+  }
+
+  .toast-success { 
+    background-color: rgb(0, 128, 0) !important;
+    color: white !important;
+    align-items: center !important;
+  }
+
+  body #toast-container > div {
+    opacity: 1;
+  }
+
+  .filled-box {
+    border: 2px solid black;
+  }
+  
+  .letter-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #keyboard-cont {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #keyboard-cont div {
+    display: flex;
+  }
+  
+  .second-row {
+    margin: 0rem 0;
+  }
+  
+  .keyboard-button {
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    margin: 0px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 0px;
+    border: 1px solid black;
+    background-color: whitesmoke;
+  }
+
+  .hint-button {
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    margin: 0px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 0px;
+    border: 1px solid black;
+    background-color: whitesmoke;
+  
+  }
+
+  .restart-button {
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    margin: 0px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 0px;
+    border: 1px solid black;
+    background-color: whitesmoke;
+  
+  }
+  
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+
+@keyframes slideDown {
+    0% {transform: translateY(var(--slide-in-start)); }
+    100% {transform: translateY(0); }
+  }
+  
+    @-moz-keyframes slideDown {
+    0% {transform: translateY(var(--slide-in-start)); }
+    100% {transform: translateY(0); }
+    }
+
+    @-webkit-keyframes slideDown {
+        0% {transform: translateY(var(--slide-in-start)); }
+        100% {transform: translateY(0); }
+    }
+
+    @-o-keyframes slideDown {
+        0% {transform: translateY(var(--slide-in-start)); }
+        100% {transform: translateY(0); }
+    }
+
+    @-ms-keyframes slideDown {
+        0% {transform: translateY(var(--slide-in-start)); }
+        100% {transform: translateY(0); }
+    }
